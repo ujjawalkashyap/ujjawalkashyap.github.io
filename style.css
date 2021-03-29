@@ -1,0 +1,107 @@
+.txt-type{
+  text-align:center;
+}
+.txt-type > .txt{
+  border-right: 0.2rem solid rgb(165, 117, 117);  
+}
+#aboutMe{
+  text-align:left;
+  border:0.2rem solid #FFF;
+  border-radius: 1em;
+}
+body{
+  background-color:#0E0B16;
+  text-align: center;
+}
+#menu1 {
+  background-color: #0E0B16;
+}
+#menu1 a {
+  color: #E7DFDD;
+}
+#menu1 li {
+  padding: 10px;
+  float: left;
+}
+#menu1 a:hover {
+  border-bottom: 2px #A239CA solid;
+}
+#menu1 .currentPage {
+  background-color: #A239CA;
+}
+#menu1 .currentPage a {
+  color: #0E0B16;
+}
+div {
+  clear: both;
+  margin-bottom: 50px;
+  padding: 30px;
+  font-family: Arial;
+}
+ul {
+  list-style: none;
+  height: 50px;
+}
+
+a {
+  text-decoration: none; 
+}
+
+div {
+  font-family: Arial;
+  color:#E7DFDD;
+}
+
+footer{
+  color:#E7DFDD;
+}
+
+a:visited {
+  color: purple;
+}
+a:link{
+  color: rgb(12, 12, 180);
+}
+
+#centered {
+  text-align: center;
+  border-bottom: #A239CA;
+  color:aliceblue;
+  border-style: solid;
+}
+
+#list {
+  list-style: disc;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+#list li{
+  height: 2em;
+}
+
+
+footer{
+  text-align:center;
+}
+
+#list li a{
+  text-decoration: underline;
+}
+
+#mail{
+  text-decoration: underline;
+  margin:0em;
+}
+
+h3{
+  margin-bottom:0em;
+}
+
+#workExperience, #projectSection, #contactSection{
+  text-align: left;
+  margin-top: 6em;
+  margin-bottom: 6em;
+  padding-top:4em;
+  padding-bottom:4em;
+}
