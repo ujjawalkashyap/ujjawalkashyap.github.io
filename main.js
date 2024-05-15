@@ -71,6 +71,8 @@ function calculate_exp(){
         return exp
 }
 
+var text = "I have an experience of " + calculate_exp().toString()+" years."
+document.getElementById("experience").innerHTML =  text;
 //Init on DOM load
 document.addEventListener("DOMContentLoaded", init);
 
@@ -82,8 +84,5 @@ function init(){
   const wait = txtElement.getAttribute('data-wait');
   //Init TypeWriter
   new TypeWriter(txtElement, words, wait);
-  var exp_years = calculate_exp();
-  // console.log(exp_years);
-  var text = "I have an experience of " + calculate_exp().toString()+" years."
-  document.getElementById("experience").innerHTML =  text;
+  
 }
