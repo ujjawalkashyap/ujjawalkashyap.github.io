@@ -54,8 +54,26 @@ console.log(fulltext);
   setTimeout(()=>this.type(),typeSpeed);
 }
 
+//calculate experience dynamically
+function calculate_exp(){
+        var Job_start_date_string = '05/13/2019'
+        // console.log(Job_start_date_string)
+        var Job_start_date = new Date(Job_start_date_string);  
+        // console.log(Job_start_date)
+        var month_diff = Date.now() - Job_start_date.getTime();  
+        // console.log(month_diff)
+        var exp_dt = new Date(month_diff);   
+          
+        var year = exp_dt.getUTCFullYear();  
+        
+        var exp = Math.abs(year - 1970); 
+        // console.log(exp);
+        return exp
+}
+
 //Init on DOM load
 document.addEventListener("DOMContentLoaded", init);
+
 
 //Init App
 function init(){
@@ -64,4 +82,8 @@ function init(){
   const wait = txtElement.getAttribute('data-wait');
   //Init TypeWriter
   new TypeWriter(txtElement, words, wait);
+  var exp_years = calculate_exp();
+  // console.log(exp_years);
+  var text = "I have an experience of " + calculate_exp().toString()+" years."
+  document.getElementById("experience").innerHTML =  text;
 }
