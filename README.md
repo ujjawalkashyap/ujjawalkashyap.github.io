@@ -1,3 +1,3 @@
-# codealong.github.io
+# ujjawalkashyap.github.io
 
-This repository consists of my portfolio which consists of my work experience and my personal Project details
+My portfolio in this repository features my work experience and details about personal projects I have completed.
